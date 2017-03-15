@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Site</title>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+		
+	</head>
+<body style="background-color: #C9CFD9">
+	<div id="mainContent">
+		<header>
+			
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+				
+		</header>
+    <hr>
+		<div class="slideshow-container" >
+  			<div class="mySlides fade">
+    
+    <img src="img/pr1.jpg" style="height: 300px; width: 960px">
+    <div ><a href="about.html" class="button">About Me</a></div>
+    <div class="text" style="text-align: center;">Welcome! to my awesome site, to learn more about me link the button above. Or scroll down to get the basics of my work.</div>
+
+  		</div>
+
+  <div class="mySlides fade">
+    
+    <img src="img/pr2.jpg" style="height: 300px; width: 960px">
+    <div class="text" style="text-align: center;">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="img/pr3.jpg" style="height: 300px; width: 960px">
+    <div class="text" style="text-align: center;">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<hr>
+
+  <script >
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1} 
+      slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }</script> 
+  		<div class="alignment">
+			  <div class="circle type1">
+			    <h3>Section 1</h3>
+			    <p>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			      consequat. 
+			    </p>
+
+			  </div>
+
+			  <div class="circle type1">
+			    <h3>Section 2</h3>
+			    <p>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			      consequat. 
+			    </p>
+
+			  </div> 
+			  
+			  <div class="circle type1">
+			    <h3>Section 3</h3>
+			    <p>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			      consequat.
+			    </p>
+
+			  </div> 
+
+		</div>
+
+		<div>
+			
+			
+
+
+		</div>
+
+
+		<div class="clear"></div>
+		<footer id="foot" style="background-color: #fff">
+		&copy; &trade; &amp; copywrite &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  company 2016. All rights reserved.
+
+	</footer>
+	</div>
+
+</body>
+</html>
