@@ -1,10 +1,18 @@
 #mainContent {
   width: 960px;
   margin: 0px auto;
-  background-color: #5F6F8E;
+  background-color: #ced6d6;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
  
 }
+
+.block{
+  padding:20px;
+  width:100%;
+  display: block;
+  float:left;
+}
+
 
  div .alignment div{
 
@@ -15,18 +23,27 @@
   
 }
 
+.box{
+  float: left;
+  width: 450px;
+  height: 300px;
 
+}
+
+.box img {
+  width: 100%;
+}
 
 .clear {
   clear: both
 }
 
 nav{
-  
+  width: 960px;
   left:0px;
   top:0px;
   padding:0px;
-  margin:0px;
+  margin:0px auto;
 }
 
 nav > ul{
@@ -40,6 +57,7 @@ nav ul li{
   list-style: none;
   display: inline-block;
   vertical-align: top;
+
 }
 
 nav a{
@@ -52,7 +70,7 @@ nav a{
 }
 
 nav a:hover{
-  background: #DDDBF1;
+  background: #8a8b8b;
   color: #383F51;
 }
 
@@ -67,7 +85,8 @@ ul {
     margin: 10px;
     padding: 0px;
     overflow: hidden;
-    background-color: #2d4056; 
+    background-color: #2f2f2f;
+    opacity: .90; 
 }
 
 li {
@@ -108,7 +127,7 @@ html, body {
 
 
   }
-
+/*Source of the slidshow https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -183,21 +202,6 @@ html, body {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -216,3 +220,26 @@ html, body {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+
+footer li a{
+  vertical-align: bottom;
+  display: inline-block;
+  width: 80px;
+  padding: 10px;
+  color: #fff;
+
+}
+
+footer > li {
+  list-style-type: none;
+}
+
+footer div{
+  float: right;
+  padding: 10px;
+}
+
+
+
